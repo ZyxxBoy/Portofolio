@@ -7,6 +7,7 @@
     <meta name="description"
         content="Muhammad Nauval Hakim - IoT Developer, AI Engineer, and Machine Learning Enthusiast. Building intelligent IoT systems and real-world AI solutions.">
     <title>{% block title %}Muhammad Nauval Hakim | Portfolio{% endblock %}</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/logo.png') }}">
 
     <!-- Google Fonts - Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -53,8 +54,10 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16 lg:h-20">
                 <!-- Logo -->
-                <a href="#hero" class="text-xl lg:text-2xl font-bold">
-                    <span class="text-neon-cyan">&lt;</span>Nauval<span class="text-neon-cyan">/&gt;</span>
+                <a href="#hero" class="flex items-center gap-2">
+                    <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo"
+                        class="w-9 h-9 lg:w-10 lg:h-10 rounded-lg">
+                    <span class="text-lg lg:text-xl font-bold">Nauval</span>
                 </a>
 
                 <!-- Desktop Menu -->
