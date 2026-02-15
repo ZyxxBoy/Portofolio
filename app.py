@@ -1,10 +1,19 @@
 import os
 import sqlite3
 from datetime import datetime
-from flask import Flask, render_template, request, redirect, url_for, flash, session
+from flask import Flask, render_template, request, redirect, url_for, flash, session, make_response
 
 app = Flask(__name__)
 app.secret_key = os.environ.get('SECRET_KEY', 'portfolio-secret-key-change-in-production')
+
+@app.after_request
+def add_cache_headers(response):
+    """Prevent Vercel CDN from caching HTML pages."""
+    if response.content_type and 'text/html' in response.content_type:
+        response.headers['Cache-Control'] = 'no-cache, no-store, must-revalidate'
+        response.headers['Pragma'] = 'no-cache'
+        response.headers['Expires'] = '0'
+    return response
 
 # --- Database Setup ---
 # Vercel has a read-only filesystem except /tmp
