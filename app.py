@@ -88,11 +88,28 @@ PROJECTS = [
         "year": "2024"
     },
     {
+        "title": "OceanGuard — IoT Coastal Monitoring",
+        "description": "Real-time coastal monitoring IoT dashboard for tracking sea level and wind speed with live charts, 7-day predictions, and smart alert system.",
+        "tech": ["Python", "Flask", "IoT", "Chart.js"],
+        "github": "https://github.com/ZyxxBoy",
+        "year": "2026",
+        "image": "images/projects/oceanguard.png"
+    },
+    {
+        "title": "RBG — AI Background Removal",
+        "description": "AI-powered background removal web application with drag-and-drop upload, before/after image comparison, and instant download functionality.",
+        "tech": ["Python", "Flask", "rembg", "AI"],
+        "github": "https://github.com/ZyxxBoy",
+        "year": "2026",
+        "image": "images/projects/rbg.png"
+    },
+    {
         "title": "SMARTNGON",
         "description": "Next-generation smart IoT system with integrated monitoring, automation, and intelligent control for modern connected environments.",
         "tech": ["ESP32", "IoT", "Flask", "MicroPython"],
         "github": "https://github.com/ZyxxBoy",
-        "year": "2026"
+        "year": "2026",
+        "image": "images/projects/smartngon.jpg"
     }
 ]
 
