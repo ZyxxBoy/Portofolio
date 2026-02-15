@@ -45,35 +45,40 @@ PROJECTS = [
         "description": "IoT-powered smart wheelchair system designed to improve mobility and quality of life for wheelchair users, featuring intelligent monitoring and connected assistive technology.",
         "tech": ["ESP32", "IoT", "Sensor Integration", "C++"],
         "github": "https://github.com/Zyxxboy",
-        "year": "2024"
+        "year": "2024",
+        "image": "images/projects/smatsi.jpg"
     },
     {
         "title": "AIRIS — Adaptive Intelligence Room Inside System",
         "description": "An AI-driven smart room system that adapts lighting, temperature, and environment based on occupant behavior using machine learning and IoT sensors.",
         "tech": ["Python", "Machine Learning", "ESP32", "Flask"],
         "github": "https://github.com/ZyxxBoy",
-        "year": "2025"
+        "year": "2025",
+        "image": "images/projects/airis.png"
     },
     {
         "title": "AQUASENSE",
         "description": "Smart water quality monitoring system using IoT sensors for real-time analysis of water parameters with cloud-based data visualization and alerts.",
         "tech": ["ESP32", "ThingSpeak", "Sensors", "MicroPython"],
         "github": "https://github.com/ZyxxBoy",
-        "year": "2024"
+        "year": "2024",
+        "image": "images/projects/aquasense.jpg"
     },
     {
         "title": "BEVISAT",
         "description": "AI-powered system integrating data annotation, classification, and validation to support intelligent decision-making and AI model development.",
         "tech": ["Python", "Roboflow", "Data Annotation", "AI"],
         "github": "https://github.com/ZyxxBoy",
-        "year": "2025"
+        "year": "2025",
+        "image": "images/projects/bevisat.jpg"
     },
     {
         "title": "SESA — Smart Energy System Analysis",
         "description": "IoT-based energy monitoring and analysis platform for tracking power consumption patterns with smart analytics and efficiency recommendations.",
         "tech": ["ESP32", "Python", "Data Analysis", "IoT"],
         "github": "https://github.com/ZyxxBoy",
-        "year": "2024"
+        "year": "2024",
+        "image": "images/projects/sesa.png"
     },
     {
         "title": "Deteksi Bahasa Isyarat Menggunakan Jari",
@@ -92,7 +97,7 @@ PROJECTS = [
 ]
 
 # --- Admin Password ---
-ADMIN_PASSWORD = os.environ.get('ADMIN_PASSWORD', 'admi')
+ADMIN_PASSWORD = os.environ.get('ADMIN_PASSWORD', 'Koalapo')
 
 # --- Routes ---
 @app.route('/')
